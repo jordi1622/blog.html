@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones | Mi Blog Jordi Oliver</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style class="css">
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #007bff;
+    --text-color-dark: #333333e0;
+    --text-color-light: #f8f9fa; 
+    --bg-light: #f8f9fa; 
+    --bg-medium: #e9ecef; 
+    --card-bg: #ffffff; 
+    --border-color: #dee2e6; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 0.8em;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 3rem 0;
+    text-align: center;
+    position: relative; 
+}
+.site-title {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    color: var(--text-color-light); 
+}
+
+.site-subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 1.5em;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 25px; 
+}
+
+.main-nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+    background-color: var(--secondary-color); 
+    color: var(--text-color-light);
+}
+
+
+.main-content {
+    display: flex;
+    gap: 30px; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.article-section {
+    flex: 3; 
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.article-section h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    color: var(--primary-color);
+}
+
+.article-meta {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.article-meta span {
+    margin-right: 15px;
+}
+
+.article-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.article-content p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+    color: var(--text-color-dark);
+}
+
+.article-content h2 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: var(--primary-color);
+}
+
+.article-content ul, .article-content ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+.article-content li {
+    margin-bottom: 0.5em;
+}
+
+
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; 
+    }
+
+    .barra-lateral {
+        margin-top: 30px; 
+    }
+
+    .article-section {
+        padding: 20px;
+    }
+
+    .article-section h1 {
+        font-size: 2em;
+    }
+
+    .main-nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .main-nav ul li a {
+        padding: 10px;
+        display: block; 
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 2em;
+    }
+
+    .site-subtitle {
+        font-size: 1em;
+    }
+}
+    </style>
+
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Economía Argenta</h1>
+            <p class="site-subtitle">Blog sobre noticias económicas, empresas, inversiones y tecnología en Argentina</p>
+
+           <nav class="main-nav">
+                <ul>
+                    <li><a href="blog.html">Inicio</a></li>
+                    <li><a href="blog.html">Artículos</a></li>
+                    
+                   
+                </ul>
+
+        </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="article-section">
+            <h1>Innovación al frente </h1>
+            <div class="article-meta">
+                <span>Publicado en Junio de 2025</span>
+                <span>Categoría: Tecnología</span>
+            </div>
+            <img src="WhatsApp Image 2025-06-09 at 11.26.36 AM.jpeg" alt="Imagen de industrias y empresas" class="article-image">
+
+            <div class="article-content">
+                <h2>IA en Argentina</h2>
+                <p> La Inteligencia Artificial ya esta es el presente que está redefiniendo el Mercado Argentino. Más allá de ser una tendencia, la IA se posiciona como una herramienta clave para que las empresas logren una reducción significativa de tiempos y costos, impulsando su eficiencia y competitividad.</p>
+
+               <p>La implementación de soluciones basadas en IA permite la automatización de tareas repetitivas, liberando a los equipos para enfocarse en actividades de mayor valor estratégico. Esto se traduce directamente en procesos más rápidos y menos errores, optimizando el uso de recursos y, por ende, disminuyendo gastos operativos. </p> 
+
+            
+                <p>Desde la gestión de clientes con chatbots inteligentes que atienden 24/7, hasta la optimización de suministro prediciendo demandas y minimizando stock, la IA ofrece caminos concretos para mejorar la rentabilidad. Además, el análisis de grandes volúmenes de datos (Big Data) impulsado por la IA para tomar decisiones más informadas, desde estrategias de marketing hasta desarrollo de nuevos productos.</p>
+
+                <p>Para las PyMEs argentinas, la IA no requiere inversiones gigantescas. Existen herramientas y servicios en la nube accesibles que les permiten empezar a experimentar con la automatización y la optimización de sus operaciones </p>
+
+                <p>Algunas empresas argentinas que han informado que están utilizando esta nueva tecnología son bancos como Santander y Galicia con sus chatbots. Como también algunas Fintech como mercado pago y otros comercios relacionados con la venta por internet como Mercado Libre.  </p>
+
+                <p>La Inteligencia Artificial es una herramienta que ya transforma el mercado argentino. Las empresas que la adopten de forma estratégica no solo verán una reducción de tiempos y costos, sino que también una mayor eficiencia y un crecimiento sostenido en un panorama económico cada vez más dinámico.</p>
+
+                
+            </div>
+        </section>
+
+        
+    </main>
+
+    
+
+</body>
+</html>

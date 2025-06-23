@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Economía Argenta | Noticias Económicas y Empresas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style class="css">
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #007bff; 
+    --text-color-dark: #333333e0;
+    --text-color-light: #f8f9fa; 
+    --bg-light: #f8f9fa; 
+    --bg-medium: #e9ecef; 
+    --card-bg: #ffffff; 
+    --border-color: #dee2e6; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 0.8em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 3rem 0;
+    text-align: center;
+    position: relative; 
+}
+
+.site-title {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    color: var(--text-color-light); 
+}
+
+.site-subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 1.5em;
+}
+
+/* --- Navegación Principal --- */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 25px; 
+}
+
+.main-nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+    background-color: var(--secondary-color); 
+    color: var(--text-color-light);
+}
+
+
+.main-content {
+    display: flex;
+    gap: 30px; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.articulos-recientes {
+    flex: 3; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+}
+
+.articulos-recientes h2 {
+    grid-column: 1 / -1; 
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+
+.entrada-blog {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.entrada-blog:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.entrada-blog img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.entrada-content {
+    padding: 20px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada-content h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+}
+
+.entrada-content p {
+    font-size: 0.95em;
+    color: var(--text-color-dark);
+    margin-bottom: 1.2em;
+    flex-grow: 1; 
+}
+
+.entrada-content .btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; 
+}
+
+
+
+
+.barra-lateral {
+    flex: 1; 
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 60px; 
+}
+
+.barra-lateral h3 {
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.barra-lateral p {
+    font-size: 0.95em;
+    margin-bottom: 1.5em;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li {
+    margin-bottom: 10px;
+}
+
+.barra-lateral ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+  
+}
+
+.barra-lateral ul li a:hover {
+    color: var(--secondary-color);
+}
+
+
+.main-footer {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 40px; 
+}
+
+.main-footer p {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.main-footer a {
+    color: var(--text-color-light);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: var(--secondary-color);
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; 
+    }
+
+    .barra-lateral {
+        margin-top: 30px; 
+    }
+
+    .articulos-recientes {
+        grid-template-columns: 1fr; 
+    }
+
+    .main-nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .main-nav ul li a {
+        padding: 10px;
+        display: block; 
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 2em;
+    }
+
+    .site-subtitle {
+        font-size: 1em;
+    }
+}
+
+
+    </style>
+
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title"> Economía Argenta </h1>
+            <p class="site-subtitle">Blog sobre noticias económicas, empresas, inversiones y tecnología en Argentina</p>
+           
+         <nav class="main-nav">
+                <ul>
+                    <li><a href="blog.html">Inicio</a></li>
+                    <li><a href="articulos-recientes">Artículos</a></li>
+                
+                    <li><a href="linktr.html">Linktr</a></li>
+                </ul>
+           
+        </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="articulos-recientes">
+            <h2> Articulos publicados </h2>
+            
+            <article class="entrada-blog">
+                <img src="foto industriales empresas.jpg" alt="Imagen de industrias y empresas">
+                <div class="entrada-content">
+                    <h3>Panorama de las empresas en Argentina 2025</h3>
+                    <p>Qué proyección ven los sectores industriales y empresariales en los siguientes años en Argentina.</p>
+                    <a href="public1.html" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <article class="entrada-blog">
+                <img src="foto inversion.jpg" alt="Imagen de inversiones">
+                <div class="entrada-content">
+                    <h3>Inversiones en el mercado argentino</h3>
+                    <p>En qué rubros recomiendan los expertos invertir de cara al futuro y desarrollo en los siguientes años.</p>
+                    <a href="public2.html" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <article class="entrada-blog">
+                <img src="WhatsApp Image 2025-06-02 at 2.25.50 PM.jpeg" alt="Imagen de herramientas y brokers">
+                <div class="entrada-content">
+                    <h3>Herramientas y Brokers para Invertir</h3>
+                    <p>¿Dónde mirar las últimas noticias económicas? ¿Por dónde invertir? ¿Qué herramientas utilizar?</p>
+                    <a href="public3.html" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <article class="entrada-blog">
+                <img src="WhatsApp Image 2025-06-09 at 11.27.28 AM.jpeg" alt="Imagen de PyMEs">
+                <div class="entrada-content">
+                    <h3>PyMEs Argentinas: transitando el cambio y descubriendo oportunidades</h3>
+                    <p>Desafíos y oportunidades para las PyMEs Argentinas en el nuevo escenario económico.</p>
+                    <a href="public4.html" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <article class="entrada-blog">
+                <img src="WhatsApp Image 2025-06-09 at 11.26.36 AM.jpeg" alt="Imagen de tecnología">
+                <div class="entrada-content">
+                    <h3>Innovación al frente</h3>
+                    <p>El rol de la innovación y la tecnología en la transformación del Mercado Argentino.</p>
+                    <a href="public5.html" class="btn">Leer más</a>
+                </div>
+            </article>
+            
+        </section>
+
+        <aside class="barra-lateral" id="acerca-de">
+            <div class="about-me">
+                <h3>Sobre mi</h3>
+                <p>Soy Jordi Oliver estoy cursando la carrera de comercialización y, como parte de la materia desarrollo y diseño Web, estoy practicando y aplicando lo visto durante la cursada.</p>
+            </div>
+            <div class="categorias-sidebar">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="public1.html">Noticias económicas</a></li>
+                    <li><a href="public2.html">Inversiones</a></li>
+                    <li><a href="public4.html">Empresas y PyMEs</a></li>
+                    <li><a href="public5.html">Tecnología e innovación</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="main-footer" id="contacto">
+        <div class="container">
+            <p>&copy; 2025 Mi Blog Jordi Oliver. Todos los derechos reservados.</p>
+        
+        </div>
+    </footer>
+
+</body>
+</html>

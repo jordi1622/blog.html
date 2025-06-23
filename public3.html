@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones | Mi Blog Jordi Oliver</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style class="css">
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #007bff;
+    --text-color-dark: #333333e0;
+    --text-color-light: #f8f9fa; 
+    --bg-light: #f8f9fa; 
+    --bg-medium: #e9ecef; 
+    --card-bg: #ffffff; 
+    --border-color: #dee2e6; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 0.8em;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 3rem 0;
+    text-align: center;
+    position: relative; 
+}
+.site-title {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    color: var(--text-color-light); 
+}
+
+.site-subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 1.5em;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 25px; 
+}
+
+.main-nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+    background-color: var(--secondary-color); 
+    color: var(--text-color-light);
+}
+
+
+.main-content {
+    display: flex;
+    gap: 30px; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.article-section {
+    flex: 3; 
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.article-section h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    color: var(--primary-color);
+}
+
+.article-meta {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.article-meta span {
+    margin-right: 15px;
+}
+
+.article-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.article-content p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+    color: var(--text-color-dark);
+}
+
+.article-content h2 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: var(--primary-color);
+}
+
+.article-content ul, .article-content ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+.article-content li {
+    margin-bottom: 0.5em;
+}
+
+
+.main-footer {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 40px; 
+}
+
+.main-footer p {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.main-footer a {
+    color: var(--text-color-light);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+   color: var(--secondary-color);
+}
+
+
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; 
+    }
+
+    .barra-lateral {
+        margin-top: 30px; 
+    }
+
+    .article-section {
+        padding: 20px;
+    }
+
+    .article-section h1 {
+        font-size: 2em;
+    }
+
+    .main-nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .main-nav ul li a {
+        padding: 10px;
+        display: block; 
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 2em;
+    }
+
+    .site-subtitle {
+        font-size: 1em;
+    }
+}
+    </style>
+
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Economía Argenta</h1>
+            <p class="site-subtitle">Blog sobre noticias económicas, empresas, inversiones y tecnología en Argentina </p>
+
+           <nav class="main-nav">
+                <ul>
+                    <li><a href="blog.html">Inicio</a></li>
+                    <li><a href="blog.html">Artículos</a></li>
+                    
+                   
+                </ul>
+
+        </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="article-section">
+            <center><h1>Herramientas y brokers para invertir</h1></center>
+            <div class="article-meta">
+                <span>Publicado en Junio de 2025</span>
+                <span>Categoría: Inversiones</span>
+            </div>
+            <img src="WhatsApp Image 2025-06-02 at 2.25.50 PM.jpeg" height="500" alt="Imagen de industrias y empresas" class="article-image">
+
+            <div class="article-content">
+                <h3> Consejos clave para tu primera inversión</h3>
+                <p> Antes de invertir, es importante saber las cosas iniciales como que es un bono, acción o cedears para esto hay muchos cursos gratuitos y contenido online de calidad. En plataformas como YouTube. </p>
+
+                <p>Conocé tu perfil de riesgo o los riesgos que estas dispuesto a tomar con tu dinero, por ejemplo si sos conservador, moderado o arriesgado. Lo importante es que tus inversiones se ajusten a cuánto estás dispuesto a ganar y a perder. Nunca inviertas dinero que no estarías dispuesto a perder.</p>
+
+                <p> Otras recomendaciones son empezar con poco y diversificar tu cartera, no necesitas grandes sumas. Podes empezar con poca plata, con montos chicos. Recordá siempre que diversificar es clave para reducir el riesgo. Así evitar la pérdida de dinero si un sector baja por ejemplo construcción, vas a evitar pérdidas grandes en poco tiempo.  </p>
+                <p> Saber esperar y ser constante, las inversiones son una carrera de largo plazo. No te desanimes ni desesperes por las variaciones diarias del mercado. La constancia y la paciencia suelen dar buenos resultados.    </p>
+                <h2>Herramientas útiles para inversores principiantes</h2>
+                <p>Noticias Económicas: Seguí portales como Ámbito Financiero, El Cronista e Infobae Economía. Te mantendrán al tanto de todas las noticias económicas y financieras tanto local e internacional.</p>
+
+                <p>Plataformas de Datos y Gráficos: Sitios como Investing.com o TradingView son excelentes para ver cotizaciones en tiempo real, analizar gráficos y acceder a información fundamental de empresas de manera gratuita </p>
+
+                <p>Fuentes Oficiales: Siempre consultá la Bolsa y Mercados Argentinos (BYMA) y la Comisión Nacional de Valores (CNV) para información oficial y para verificar la regulación de cualquier entidad.</p>
+
+                <h3>¿Dónde Operar? </h3>
+                <p> Para comprar y vender activos financieros, necesitas  abrir una cuenta en un agente de liquidación y compensación (ALyC), comúnmente llamado "broker". Al elegir uno, asegurate de:</p>
+
+                <p>Comparar comisiones: Varían entre brokers por cada operación y por el mantenimiento de cuenta. </p>
+                <p> Que su plataforma sea amigable: que sea fácil de usar te facilitará mucho la vida al principio.</p>
+                <p> Qué productos ofrece: Asegurate de que tenga las acciones, CEDEARs, bonos o Fondos Comunes de Inversión (FCI) que te interesan.</p>
+                <p>Algunos de los brokers más reconocidos y utilizados en Argentina son:  InvertirOnline (IOL), Balanz Capital, Bull Market Brokers.  </p>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="main-footer" id="contacto">
+        <div class="container">
+            <p>&copy; 2025 Mi Blog Jordi Oliver. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</head>
